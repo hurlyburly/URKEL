@@ -7,7 +7,7 @@ var burger = require("../models/burger.js");
 
 // Route logic for urls
 router.get("/", function(req, res) {
- 
+ res.render('index')
 });
 
 router.post("/api/burgers", function(req, res) {
