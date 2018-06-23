@@ -5,8 +5,8 @@ var connection = require("../config/connection.js");
 //======================================================
 //SQL statement function object. Called in burger.js model file
 
-// var orm = {
-//  Pseudocode   
-//   };
+var orm = {
+ //Pseudocode   
+  };
 
 module.exports = orm;
