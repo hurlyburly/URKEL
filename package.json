@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hurlyburly/burger.git"
+    "url": "git+https://github.com/hurlyburly/URKEL.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/hurlyburly/burger/issues"
+    "url": "https://github.com/hurlyburly/URKEL/issues"
   },
-  "homepage": "https://github.com/hurlyburly/burger#readme",
+  "homepage": "https://github.com/hurlyburly/URKEL#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
     "bulma": "^0.7.1",
