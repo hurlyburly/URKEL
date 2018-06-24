@@ -23,9 +23,9 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 // Import routes and give the server access to them.
-var router = require("./controllers/tasks_controller.js");
+var routes = require("./controllers/tasks_controller.js");
 
-app.use(router);
+app.use(routes);
 
 // Start our server so that it can begin listening to client requests.
 app.listen(PORT, function() {
