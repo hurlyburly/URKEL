@@ -1,3 +1,3 @@
-INSERT INTO burgers (burger_names, devoured) VALUES ('Bacon Cheeseburger',FALSE);
-INSERT INTO burgers (burger_names, devoured) VALUES ('Veggie',FALSE);
-INSERT INTO burgers (burger_names, devoured) VALUES ('Double Cheeseburger',FALSE);
+INSERT INTO tasks (task, completed) VALUES ('Deposit paycheck',FALSE);
+INSERT INTO tasks (task, completed) VALUES ('Vacuum carpet',FALSE);
+INSERT INTO tasks (task, completed) VALUES ('Fix sink drain issue',FALSE);

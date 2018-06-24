@@ -16,14 +16,16 @@
             <div class="tile is-parent">
                 <article class="tile is-child notification">
                     <div class="field">
-                        <label class="label">TASK</label>
+                        <label class="label">Add Task </label>
                         <div class="control">
-                            <input class="input" type="text" placeholder="Text input">
+                            <input class="input" type="text" placeholder="Enter Task">
                         </div>
                     </div>
                     <div class="field is-grouped">
                         <div class="control">
-                            <button class="button is-link">Submit</button>
+                            <button class="button is-primary enter-task">
+                                <strong>Do It!</strong>
+                            </button>
                         </div>
                     </div>
                 </article>
@@ -34,13 +36,29 @@
         <div class="tile is-ancestor">
             <div class="tile is-vertical">
                 {{! handlebars stuff here to populate tiles with each task submitted }}
-                <div class="tile">
+                {{!-- <div class="tile">
                     <div class="tile is-parent">
                         <article class="tile is-child notification is-warning">
-                            <p class="title">Vertical...</p>
-                            <p class="subtitle">Top tile</p>
+                            <p class="subtitle"><strong>Task<strong></p>
                             <div class="control">
-                                <button class="button is-link">Complete</button>
+                                <button class="button is-primary">
+                                    <i class="fas fa-check"> </i>
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+                </div> --}}
+            <div class="tile">
+                    <div class="tile is-parent">
+                        <article class="tile is-child notification is-warning">
+                            <p class="subtitle" 
+                              ><strong>{{task}}<strong></p>
+                            <div class="control">
+                                <button class="button is-primary" task-id="{{id}}" data-complete="{{false}}">
+                                    {{#if data-complete}}TASK COMPLETED! <button class="
+                                    button is-success"> {{else}}
+                                    <i class="fas fa-check"></i>{{/if}}
+                                </button>
                             </div>
                         </article>
                     </div>

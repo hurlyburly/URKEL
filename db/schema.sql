@@ -1,13 +1,13 @@
 DROP DATABASE IF EXISTS burgers_db;
-CREATE DATABASE burgers_db;
+CREATE DATABASE tasks_db;
 
 
-USE burgers_db;
+USE tasks_db;
 
-CREATE TABLE burgers
+CREATE TABLE tasks
 (
 	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-	burger_names VARCHAR (255) NOT NULL,
-    devoured BOOLEAN
+	task VARCHAR (255) NOT NULL,
+    completed BOOLEAN
 );
 
