@@ -10,7 +10,7 @@ router.get("/", function(req, res) {
  res.render('index')
 });
 
-router.post("/api/task", function(req, res) {
+router.put("/api/tasks", function(req, res) {
  res.json(req.body);
 });
 

@@ -10,20 +10,20 @@
         </div>
     </div>
 </section>
-<div class="columns ">
+<div class="columns main-content">
     <div class="column is-one-fifth">
         <div class="tile is-ancestor stretch-height">
             <div class="tile is-parent">
                 <article class="tile is-child notification">
                     <div class="field">
-                        <label class="label">Add Task </label>
+                        <label class="label">Add A Task</label>
                         <div class="control">
                             <input class="input" type="text" placeholder="Enter Task">
                         </div>
                     </div>
                     <div class="field is-grouped">
                         <div class="control">
-                            <button class="button is-primary enter-task">
+                            <button class="button is-primary create-task">
                                 <strong>Do It!</strong>
                             </button>
                         </div>
@@ -35,11 +35,14 @@
     <div class="column">
         <div class="tile is-ancestor">
             <div class="tile is-vertical">
-                {{! handlebars stuff here to populate tiles with each task submitted }}
-                {{!-- <div class="tile">
+                {{! handlebars stuff here to populate tiles with each task submitted }} {{!--
+                <div class="tile">
                     <div class="tile is-parent">
                         <article class="tile is-child notification is-warning">
-                            <p class="subtitle"><strong>Task<strong></p>
+                            <p class="subtitle">
+                                <strong>Task
+                                    <strong>
+                            </p>
                             <div class="control">
                                 <button class="button is-primary">
                                     <i class="fas fa-check"> </i>
@@ -48,30 +51,93 @@
                         </article>
                     </div>
                 </div> --}}
-            <div class="tile">
+                <div class="tile">
                     <div class="tile is-parent">
                         <article class="tile is-child notification is-warning">
-                            <p class="subtitle" 
-                              ><strong>{{task}}<strong></p>
+                            <p class="subtitle">
+                                <strong>{{task}}
+                                    <strong>
+                            </p>
                             <div class="control">
                                 <button class="button is-primary" task-id="{{id}}" data-complete="{{false}}">
-                                    {{#if data-complete}}TASK COMPLETED! <button class="
+                                    {{#if data-complete}}TASK COMPLETED!
+                                    <button class="
                                     button is-success"> {{else}}
-                                    <i class="fas fa-check"></i>{{/if}}
-                                </button>
+                                        <i class="fas fa-check"></i>{{/if}}
+                                    </button>
                             </div>
                         </article>
                     </div>
                 </div>
+                   <div class="tile">
+                    <div class="tile is-parent">
+                        <article class="tile is-child notification is-warning">
+                            <p class="subtitle">
+                                <strong>Task
+                                    <strong>
+                            </p>
+                            <div class="control">
+                                <button class="button is-primary">
+                                    <i class="fas fa-check"> </i>
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+                </div> 
+                   <div class="tile">
+                    <div class="tile is-parent">
+                        <article class="tile is-child notification is-warning">
+                            <p class="subtitle">
+                                <strong>Task
+                                    <strong>
+                            </p>
+                            <div class="control">
+                                <button class="button is-primary">
+                                    <i class="fas fa-check"> </i>
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+                </div> 
+                   <div class="tile">
+                    <div class="tile is-parent">
+                        <article class="tile is-child notification is-warning">
+                            <p class="subtitle">
+                                <strong>Task
+                                    <strong>
+                            </p>
+                            <div class="control">
+                                <button class="button is-primary">
+                                    <i class="fas fa-check"> </i>
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+                </div>    <div class="tile">
+                    <div class="tile is-parent">
+                        <article class="tile is-child notification is-warning">
+                            <p class="subtitle">
+                                <strong>Task
+                                    <strong>
+                            </p>
+                            <div class="control">
+                                <button class="button is-primary">
+                                    <i class="fas fa-check"> </i>
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+                </div> 
             </div>
         </div>
     </div>
 </div>
 <footer class="footer">
-    <div class="content has-text-centered">
+    <div class="has-text-centered">
         <p>
-            <strong>URKEL:</strong>
-            <a href="https://hurlyburly.github.io/Portfolio/">Kalsang Bhutia</a>.
+            <strong>
+                <a href="https://hurlyburly.github.io/Portfolio/">URKEL by Kalsang Bhutia</a>
+            </strong>
         </p>
     </div>
 </footer>
