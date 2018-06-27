@@ -1,7 +1,7 @@
 $(function() {
     $(".create-task").on("click", function(event) {
       var id = $(this).data("id");
-      var completed = $(this).data("completed");
+      var completed = $(this).data("is-incomplete");
   
       var completedState= {
         task:$(".input").val().trim(),
@@ -14,29 +14,27 @@ $(function() {
         data: completedState
       }).then(
         function() {
-          console.log("changed task to", completed);
           // Reload the page to get the updated list
           location.reload();
         }
       );
     });
+    $(".is-incomplete").on("click", function(event) {
+      var id = $(this).data("id");
+      var completed = $(this).data("is-completed");
   
-    $(".create-task").on("click", function(event) {
-      // Make sure to preventDefault on a submit event.
-      event.preventDefault();
-  
-      var newTask = {
-        task: $(".input").val().trim(),
-        completed:"false"
+      var completedState= {
+        id:id,
+        completed: "true"
       };
   
-      // Send the POST request.
-      $.ajax("/api/tasks", {
+      // Send the PUT request.
+      $.ajax("/api/tasks/", {
         type: "PUT",
-        data: newTask
+        data: completedState
       }).then(
         function() {
-          console.log("created new task");
+          console.log("changed task to", completed);
           // Reload the page to get the updated list
           location.reload();
         }
